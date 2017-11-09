@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <title>Dream Machine</title>
 
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700" rel="stylesheet">
 
       <link rel="stylesheet" href="css/style.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <script>
@@ -27,38 +32,41 @@
 </head>
 
 <body>
-  <div id="dreamMachine">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <h1>
-        Dream Machine
-      </h1>
-    </div>
-    <div class="col-md-12 text-center">
-      <p>
-        This is where the magic happens.
-      </p>
-    </div>
-    <div class="col-md-12 text-center">
-      <div class="btn-group" data-toggle="buttons" id="radioGroup">
-        <label class="btn btn-primary active">
-          <input type="radio" name="speeds" id="speed1" autocomplete="off" value="62.5" checked> Speed 1
-        </label>
-        <label class="btn btn-primary">
-          <input type="radio" name="speeds" id="speed2" autocomplete="off"  value="45.4545"> Speed 2
-        </label>
-        <label class="btn btn-primary">
-          <input type="radio" name="speeds" id="speed3" autocomplete="off"  value="38.4615"> Speed 3
-        </label>
+  <div id="dreamMachine" class="col-md-12 text-center">
+    <div class="row">
+      <div class="col-md-12 text-center" style="top:50px">
+        <h1 class="animated pulse infinite">
+          Dream Machine
+        </h1>
+      </div>
+      <!-- This needs to be nested in its own div
+      so that it can be put towards the bottom of the page -->
+      <div class="col-md-12 text-center" style="position:fixed;bottom:50px">
+        <div class="col-md-12 text-center">
+          <p style="color:silver;">
+            Pick your poison.
+          </p>
+        </div>
+        <div class="col-md-12 text-center">
+          <div class="btn-group" data-toggle="buttons" id="radioGroup">
+            <label class="btn btn-primary active">
+              <input type="radio" name="speeds" id="speed1" autocomplete="off" value="62.5" checked> Fast
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="speeds" id="speed2" autocomplete="off"  value="45.4545"> Faster
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="speeds" id="speed3" autocomplete="off"  value="38.4615"> Fastest
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </div>
 </body>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
-
-    <script  src="js/index.js"></script>
-
+<script  src="js/index.js"></script>
 </body>
 </html>
